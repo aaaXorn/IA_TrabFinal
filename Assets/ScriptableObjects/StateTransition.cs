@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Transition", menuName = "Scriptable Object/State Machine")]
+[CreateAssetMenu(fileName = "Transition", menuName = "Scriptable Object/State Machine/Transition")]
 public class StateTransition : ScriptableObject
 {
     [Tooltip("Condition to change states.")]

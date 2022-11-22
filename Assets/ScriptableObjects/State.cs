@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "State", menuName = "Scriptable Object/State Machine")]
+[CreateAssetMenu(fileName = "State", menuName = "Scriptable Object/State Machine/State")]
 public class State : ScriptableObject
 {
     [Tooltip("Action when entering this state.")]

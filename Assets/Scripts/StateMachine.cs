@@ -3,18 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class StateMachine : MonoBehaviour
+public abstract class StateMachine : MonoBehaviour
 {
     [Tooltip("Initial state.")]
     [SerializeField] State _initState;
     //current state
     State _currState;
 
+    void Awake()
+    {
+        OnAwake();
+    }
+    protected virtual void OnAwake() {}
+
     void Start()
     {
         //sets the current state as the initial state
         _currState = _initState;
+
+        OnStart();
     }
+    protected virtual void OnStart() {}
 
     void Update()
     {
