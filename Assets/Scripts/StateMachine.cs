@@ -27,6 +27,8 @@ public abstract class StateMachine : MonoBehaviour
 
     void Update()
     {
+        OnUpdate();
+
         StateTransition triggeredTransit = null;
         //checks the conditions for each transition
         foreach(StateTransition transit in _currState.GetTransitions())
@@ -65,6 +67,8 @@ public abstract class StateMachine : MonoBehaviour
         //commits the queued actions
         DoActions(actions);
     }
+
+    protected virtual void OnUpdate() {}
 
     //commits the specified actions
     void DoActions(List<StateAction> actions)
