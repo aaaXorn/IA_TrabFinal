@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerAddF", menuName = "Scriptable Object/State Machine/Player/Action/Movement Add Force")]
+[CreateAssetMenu(fileName = "AddForce", menuName = "Scriptable Object/State Machine/Player/Action/Movement Add Force")]
 public class PlayerMoveForce : PlayerAction
 {
     [Tooltip("Move speed.")]

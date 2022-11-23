@@ -8,9 +8,10 @@ public class PlayerControl : MonoBehaviour
     [Tooltip("Initial state.")]
     [SerializeField] PlayerState _initState;
     PlayerState _currState;
-
     
     Rigidbody _rigid;
+
+    Camera _cam;
 
     float _h_input;
     float _v_input;
@@ -19,6 +20,7 @@ public class PlayerControl : MonoBehaviour
     void Awake()
     {
         _rigid = GetComponent<Rigidbody>();
+        _cam = Camera.main;
     }
 
     void Start()
@@ -90,6 +92,11 @@ public class PlayerControl : MonoBehaviour
     {
         return _rigid;
     }
+    public Camera GetCam()
+    {
+        return _cam;
+    }
+
     public float GetHInput()
     {
         return _h_input;

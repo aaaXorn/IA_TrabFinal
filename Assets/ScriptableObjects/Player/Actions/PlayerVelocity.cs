@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PlayerVel", menuName = "Scriptable Object/State Machine/Player/Action/Movement Velocity")]
+[CreateAssetMenu(fileName = "Velocity", menuName = "Scriptable Object/State Machine/Player/Action/Movement Velocity")]
 public class PlayerVelocity : PlayerAction
 {
     [Tooltip("Move speed.")]

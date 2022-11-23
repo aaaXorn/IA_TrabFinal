@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d75e5560b5c8a944da6bc58a3f8326f3, type: 3}
-  m_Name: PlayerAddF
+  m_Name: AddF
   m_EditorClassIdentifier: 
   _spd: 15
   _force: 7.5
