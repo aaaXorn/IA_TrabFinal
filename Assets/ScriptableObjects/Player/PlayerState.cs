@@ -9,6 +9,8 @@ public class PlayerState : ScriptableObject
     [SerializeField] PlayerAction _entryAction;
     [Tooltip("Actions made during the state.")]
     [SerializeField] PlayerAction[] _stateActions;
+    [Tooltip("Actions made during the state in FixedUpdate().")]
+    [SerializeField] PlayerAction[] _statePhysicsActions;
     [Tooltip("Action when exiting this state.")]
     [SerializeField] PlayerAction _exitAction;
     [Tooltip("This state's possible transitions.")]
@@ -17,6 +19,11 @@ public class PlayerState : ScriptableObject
     public PlayerAction[] GetActions()
     {
         return _stateActions;
+    }
+
+    public PlayerAction[] GetPhysicsActions()
+    {
+        return _statePhysicsActions;
     }
 
     public PlayerAction GetEntryAction()

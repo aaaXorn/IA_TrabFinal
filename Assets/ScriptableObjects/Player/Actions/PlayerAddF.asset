@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2291dff6365ef134eb03f81f693f49f4, type: 3}
-  m_Name: PlayerFreeState
+  m_Script: {fileID: 11500000, guid: d75e5560b5c8a944da6bc58a3f8326f3, type: 3}
+  m_Name: PlayerAddF
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 0}
-  _stateActions: []
-  _exitAction: {fileID: 0}
-  _transitions: []
+  _spd: 15
+  _force: 7.5
+  _fMode: 0
