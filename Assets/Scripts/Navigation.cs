@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequiresComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class Navigation : MonoBehaviour
 {
     [Tooltip("AI follow target.")]
@@ -19,7 +19,7 @@ public class Navigation : MonoBehaviour
     }
 
     //patrols through an array of waypoints
-    public void PatrolNextWaypoint()
+    public void GoToNextWaypoint()
     {
         _navAgent.destination = _waypoints[_currWaypoint].position;
         _currWaypoint++;
@@ -29,21 +29,21 @@ public class Navigation : MonoBehaviour
     //moves to a defined target (such as the player)
     public void GoToTarget()
     {
-        agent.destination = target.position;
+        _navAgent.destination = _target.position;
     }
 
     //stops the agent
     public void StopAgent()
     {
-        agent.isStopped = true;
-        agent.ResetPath();
+        _navAgent.isStopped = true;
+        _navAgent.ResetPath();
     }
 
     //checks if the agent reached its destination
     public bool IsAtDestination()
     {
-        if(!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance &&
-            (!agent.hasPath || agent.velocity.sqrMagnitude == 0f))
+        if(!_navAgent.pathPending && _navAgent.remainingDistance <= _navAgent.stoppingDistance &&
+            (!_navAgent.hasPath || _navAgent.velocity.sqrMagnitude == 0f))
         {
             return true;
         }

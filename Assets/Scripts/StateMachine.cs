@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
-public abstract class StateMachine : MonoBehaviour
+[RequireComponent(typeof(Navigation))]
+public class StateMachine : MonoBehaviour
 {
+    Navigation _nav;
+
     [Tooltip("Initial state.")]
     [SerializeField] State _initState;
     //current state
@@ -12,23 +14,17 @@ public abstract class StateMachine : MonoBehaviour
 
     void Awake()
     {
-        OnAwake();
+        _nav = GetComponent<Navigation>();
     }
-    protected virtual void OnAwake() {}
 
     void Start()
     {
         //sets the current state as the initial state
         _currState = _initState;
-
-        OnStart();
     }
-    protected virtual void OnStart() {}
 
     void Update()
     {
-        OnUpdate();
-
         StateTransition triggeredTransit = null;
         //checks the conditions for each transition
         foreach(StateTransition transit in _currState.GetTransitions())
@@ -68,8 +64,6 @@ public abstract class StateMachine : MonoBehaviour
         DoActions(actions);
     }
 
-    protected virtual void OnUpdate() {}
-
     //commits the specified actions
     void DoActions(List<StateAction> actions)
     {
@@ -77,5 +71,10 @@ public abstract class StateMachine : MonoBehaviour
         {
             if(act != null) act.Action(this);
         }
+    }
+
+    public Navigation GetNav()
+    {
+        return _nav;
     }
 }
