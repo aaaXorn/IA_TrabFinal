@@ -13,6 +13,9 @@ public class PlayerControl : MonoBehaviour
 
     Camera _cam;
 
+    [Tooltip("Attack indicator.")]
+    [SerializeField] GameObject _atkIndicator;
+
     float _h_input;
     float _v_input;
     bool _pew_input;
@@ -32,7 +35,7 @@ public class PlayerControl : MonoBehaviour
     {
         _h_input = Input.GetAxis("Horizontal");
         _v_input = Input.GetAxis("Vertical");
-        _pew_input = Input.GetButtonDown("Fire1");
+        _pew_input = Input.GetButton("Fire1");
 
         PlayerTransition triggeredTransit = null;
         foreach(PlayerTransition transit in _currState.GetTransitions())
@@ -104,5 +107,26 @@ public class PlayerControl : MonoBehaviour
     public float GetVInput()
     {
         return _v_input;
+    }
+    public bool GetPewInput()
+    {
+        return _pew_input;
+    }
+
+    public void SetAtkIndicator(bool enabled)
+    {
+        _atkIndicator.SetActive(enabled);
+    }
+    public Vector3 GetAtkIndicatorPos()
+    {
+        return _atkIndicator.transform.position;
+    }
+    public void SetAtkIndicatorZScale(float scale)
+    {
+        _atkIndicator.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, scale);
+    }
+    public void SetAtkIndicatorRot(Quaternion rot)
+    {
+        _atkIndicator.transform.rotation = rot;
     }
 }

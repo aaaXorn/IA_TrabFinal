@@ -17,4 +17,5 @@ MonoBehaviour:
   _statePhysicsActions:
   - {fileID: 11400000, guid: ae80629256beab8439fb119ddb9799f7, type: 2}
   _exitAction: {fileID: 0}
-  _transitions: []
+  _transitions:
+  - {fileID: 11400000, guid: d2456bfde8521774c8b219fa7dd3d2e4, type: 2}

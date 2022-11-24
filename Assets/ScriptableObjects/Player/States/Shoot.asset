@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2b6ab9727d55ab439023431e2ffcf86, type: 3}
   m_Name: Shoot
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 0}
+  _entryAction: {fileID: 11400000, guid: 71c5b123d0778ef4b8c1f9f05490f003, type: 2}
   _stateActions:
   - {fileID: 11400000, guid: b46e7f78fcaec0e4eb3bcb06e19ea55b, type: 2}
   _statePhysicsActions: []
-  _exitAction: {fileID: 0}
-  _transitions: []
+  _exitAction: {fileID: 11400000, guid: 2d18934911f3dce4291bbd1231a94fef, type: 2}
+  _transitions:
+  - {fileID: 11400000, guid: ef5a255964609b2409592b8dda9dff86, type: 2}
