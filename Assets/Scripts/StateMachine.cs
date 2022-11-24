@@ -25,6 +25,7 @@ public class StateMachine : MonoBehaviour
 
     void Update()
     {
+        print("test");
         StateTransition triggeredTransit = null;
         //checks the conditions for each transition
         foreach(StateTransition transit in _currState.GetTransitions())

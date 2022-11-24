@@ -62,4 +62,20 @@ public class Navigation : MonoBehaviour
     {
         return _target;
     }
+
+    public void SetClosestWaypoint()
+    {
+        float lowest_dist = Mathf.Infinity;
+        float dist;
+        Transform target = null;
+
+        for(int i = 0; i < _waypoints.Length; i++)
+        {
+            dist = (_waypoints[i].position - transform.position).magnitude;
+
+            if(dist < lowest_dist) target = _waypoints[i];
+        }
+        
+        _target = target;
+    }
 }

@@ -9,10 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2291dff6365ef134eb03f81f693f49f4, type: 3}
-  m_Name: Chase
+  m_Script: {fileID: 11500000, guid: 1fd5833e2c0520f4d898b5e667e809aa, type: 3}
+  m_Name: StartPatrol
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 11400000, guid: 9aa1f7263596326499c490e171bb3c0c, type: 2}
-  _stateActions: []
-  _exitAction: {fileID: 0}
-  _transitions: []

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2291dff6365ef134eb03f81f693f49f4, type: 3}
   m_Name: Patrol
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 0}
+  _entryAction: {fileID: 11400000, guid: 02c8d3d117f047f44b4c4c04cb681ab4, type: 2}
   _stateActions:
   - {fileID: 11400000, guid: 21d0678f0c4e84144b533b354758f500, type: 2}
   _exitAction: {fileID: 0}

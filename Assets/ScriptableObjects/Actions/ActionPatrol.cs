@@ -7,7 +7,7 @@ public class ActionPatrol : StateAction
 {
     public override void Action(StateMachine sm)
     {
-        if(!sm.GetNav().IsAtDestination())
+        if(sm.GetNav().IsAtDestination())
         {
             sm.GetNav().GoToNextWaypoint();
         }

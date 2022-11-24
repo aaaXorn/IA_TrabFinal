@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2291dff6365ef134eb03f81f693f49f4, type: 3}
-  m_Name: Chase
+  m_Script: {fileID: 11500000, guid: 2795d72ab0ce8fc43bf33247bcb00f57, type: 3}
+  m_Name: StartChase
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 11400000, guid: 9aa1f7263596326499c490e171bb3c0c, type: 2}
-  _stateActions: []
-  _exitAction: {fileID: 0}
-  _transitions: []
+  _spottedVFX: {fileID: 5373305563677756781, guid: b4191c14c6f1d1d43a1870cecd5a2900, type: 3}
+  _spawnOffset: {x: 0, y: 1.1, z: 0}
