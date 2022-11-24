@@ -67,15 +67,20 @@ public class Navigation : MonoBehaviour
     {
         float lowest_dist = Mathf.Infinity;
         float dist;
-        Transform target = null;
+        int waypoint = 0;
 
         for(int i = 0; i < _waypoints.Length; i++)
         {
             dist = (_waypoints[i].position - transform.position).magnitude;
 
-            if(dist < lowest_dist) target = _waypoints[i];
+            if(dist < lowest_dist) waypoint = i;
         }
         
-        _target = target;
+        _currWaypoint = waypoint;
+    }
+
+    public float GetRemainingDist()
+    {
+        return _navAgent.remainingDistance;
     }
 }

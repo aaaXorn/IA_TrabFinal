@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9418cb01cd63fa45a35fa19d675a130, type: 3}
+  m_Name: ChaseTransit
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 11400000, guid: d760087884805a342aeb511d36af314c, type: 2}
+  _action: {fileID: 11400000, guid: 9aa1f7263596326499c490e171bb3c0c, type: 2}
+  _targetState: {fileID: 11400000, guid: 8ed053adfa70c07409bedca45782ba83, type: 2}

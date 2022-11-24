@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f52946df53c816846a026c580433f5c1, type: 3}
-  m_Name: ChaseCon
+  m_Script: {fileID: 11500000, guid: b9418cb01cd63fa45a35fa19d675a130, type: 3}
+  m_Name: PatrolTransit
   m_EditorClassIdentifier: 
-  _playerLM:
-    serializedVersion: 2
-    m_Bits: 8
-  _aggroDist: 7.5
+  _condition: {fileID: 11400000, guid: bc24feec1b3d8734fa60a5fd91204da6, type: 2}
+  _action: {fileID: 0}
+  _targetState: {fileID: 11400000, guid: 6d863dc788c79494fb4f22553ed8e740, type: 2}
