@@ -33,6 +33,8 @@ public class PlayerControl : MonoBehaviour
     void Start()
     {
         _currState = _initState;
+
+        SetAtkIndicator(false);
     }
 
     void Update()

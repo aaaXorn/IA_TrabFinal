@@ -10,7 +10,10 @@ public class ConditionPatrol : StateCondition
 
     public override bool Condition(StateMachine sm)
     {
-        if(sm.GetNav().GetRemainingDist() >= _disengageDist) return true;
+        if(sm.GetNav().GetDistFromTarget() >= _disengageDist)
+        {
+            return true;
+        }
 
         return false;
     }

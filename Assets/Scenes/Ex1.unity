@@ -422,6 +422,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initState: {fileID: 11400000, guid: 6d863dc788c79494fb4f22553ed8e740, type: 2}
+  _atkIndicator: {fileID: 1846772238}
+  float1: 0
 --- !u!4 &651775765
 Transform:
   m_ObjectHideFlags: 0

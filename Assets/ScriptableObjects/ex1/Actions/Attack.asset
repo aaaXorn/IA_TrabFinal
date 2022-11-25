@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41e0a269bd217894f94f8eaa756318af, type: 3}
-  m_Name: PatrolCon
+  m_Script: {fileID: 11500000, guid: 00da40f3ce8a3c243a3b549700a7d309, type: 3}
+  m_Name: Attack
   m_EditorClassIdentifier: 
-  _disengageDist: 10
+  _playerLM:
+    serializedVersion: 2
+    m_Bits: 8
+  _boxSize: {x: 1, y: 1, z: 1}

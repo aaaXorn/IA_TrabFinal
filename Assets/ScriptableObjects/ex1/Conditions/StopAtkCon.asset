@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41e0a269bd217894f94f8eaa756318af, type: 3}
-  m_Name: PatrolCon
+  m_Script: {fileID: 11500000, guid: 6ad01cedad690ea4cb069cb3a1bb84d3, type: 3}
+  m_Name: StopAtkCon
   m_EditorClassIdentifier: 
-  _disengageDist: 10
+  _atkTimer: 2

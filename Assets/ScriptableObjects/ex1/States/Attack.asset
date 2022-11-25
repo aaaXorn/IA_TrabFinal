@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2291dff6365ef134eb03f81f693f49f4, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 0}
-  _stateActions: []
-  _exitAction: {fileID: 0}
-  _transitions: []
+  _entryAction: {fileID: 11400000, guid: deaf99d2dd6ad334480198dee0689cc9, type: 2}
+  _stateActions:
+  - {fileID: 11400000, guid: 578378625442a4c468b77a906031d45b, type: 2}
+  _exitAction: {fileID: 11400000, guid: 34928ce04275e1541b602d6b8276499f, type: 2}
+  _transitions:
+  - {fileID: 11400000, guid: 36d9c0544de42994ebb5dc22c34e6a37, type: 2}

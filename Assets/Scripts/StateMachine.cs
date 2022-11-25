@@ -12,6 +12,11 @@ public class StateMachine : MonoBehaviour
     //current state
     State _currState;
 
+    [SerializeField] GameObject _atkIndicator;
+
+    [Tooltip("Float for external use, in actions or conditions.")]
+    public float float1;
+
     void Awake()
     {
         _nav = GetComponent<Navigation>();
@@ -21,6 +26,8 @@ public class StateMachine : MonoBehaviour
     {
         //sets the current state as the initial state
         _currState = _initState;
+
+        SetAtkIndicator(false);
     }
 
     void Update()
@@ -76,5 +83,14 @@ public class StateMachine : MonoBehaviour
     public Navigation GetNav()
     {
         return _nav;
+    }
+
+    public void SetAtkIndicator(bool enabled)
+    {
+        _atkIndicator.SetActive(enabled);
+    }
+    public Vector3 GetAtkIndicatorPos()
+    {
+        return _atkIndicator.transform.position;
     }
 }

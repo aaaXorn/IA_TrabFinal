@@ -83,4 +83,8 @@ public class Navigation : MonoBehaviour
     {
         return _navAgent.remainingDistance;
     }
+    public float GetDistFromTarget()
+    {
+        return (_target.position - transform.position).magnitude;
+    }
 }
