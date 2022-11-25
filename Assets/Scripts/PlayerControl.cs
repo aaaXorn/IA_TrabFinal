@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PlayerHealth))]
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerControl : MonoBehaviour
     Rigidbody _rigid;
 
     Camera _cam;
+
+    PlayerHealth _ph;
 
     [Tooltip("Attack indicator.")]
     [SerializeField] GameObject _atkIndicator;
@@ -24,6 +27,7 @@ public class PlayerControl : MonoBehaviour
     {
         _rigid = GetComponent<Rigidbody>();
         _cam = Camera.main;
+        _ph = GetComponent<PlayerHealth>();
     }
 
     void Start()
@@ -98,6 +102,10 @@ public class PlayerControl : MonoBehaviour
     public Camera GetCam()
     {
         return _cam;
+    }
+    public PlayerHealth GetHP()
+    {
+        return _ph;
     }
 
     public float GetHInput()

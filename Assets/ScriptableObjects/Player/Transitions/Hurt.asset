@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34629e977c238c442abbc654a4a00bbe, type: 3}
   m_Name: Hurt
   m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
+  _condition: {fileID: 11400000, guid: d5d88657b811b4c44b9c38f7f8a3b6fa, type: 2}
   _action: {fileID: 0}
   _targetState: {fileID: 11400000, guid: bbba3607fb486ab48b47adcf6565ffed, type: 2}

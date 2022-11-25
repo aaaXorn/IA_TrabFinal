@@ -19,3 +19,4 @@ MonoBehaviour:
   _exitAction: {fileID: 11400000, guid: 2d18934911f3dce4291bbd1231a94fef, type: 2}
   _transitions:
   - {fileID: 11400000, guid: ef5a255964609b2409592b8dda9dff86, type: 2}
+  - {fileID: 11400000, guid: 52507e2f676eb5046b06077e49ae74d4, type: 2}

@@ -9,12 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2b6ab9727d55ab439023431e2ffcf86, type: 3}
-  m_Name: Hurt
+  m_Script: {fileID: 11500000, guid: 4b1e6410d81085d4d88e31d74dc96aa2, type: 3}
+  m_Name: IsHurt
   m_EditorClassIdentifier: 
-  _entryAction: {fileID: 0}
-  _stateActions: []
-  _statePhysicsActions: []
-  _exitAction: {fileID: 0}
-  _transitions:
-  - {fileID: 11400000, guid: 9d6a4a7a55116b84482307b576c51785, type: 2}
