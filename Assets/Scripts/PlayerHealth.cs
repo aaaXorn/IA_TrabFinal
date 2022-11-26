@@ -16,9 +16,22 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] Renderer _render;
     Material _mat;
 
+    [Tooltip("Max HP.")]
+    [SerializeField] int _maxHP = 2;
+    int _HP;
+
+    Vector3 _startPos;
+
     void Awake()
     {
         _mat = _render.material;
+    }
+
+    void Start()
+    {
+        _startPos = transform.position;
+
+        _HP = _maxHP;
     }
 
     public bool IsHurt()
@@ -26,13 +39,20 @@ public class PlayerHealth : MonoBehaviour
         return _isHurt;
     }
 
-    public void Damage()
+    public bool Damage()
     {
-        if(_invul) return;
+        if(_invul) return false;
 
         _curr_hurtTime = _hurtTime;
+        _HP--;
 
+        if(_HP <= 0)
+        {
+            transform.position = _startPos;
+            _HP = _maxHP;
+        }
         StartCoroutine("DamageTimer");
+        return false;
     }
 
     private IEnumerator DamageTimer()

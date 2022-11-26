@@ -14,8 +14,10 @@ public class StateMachine : MonoBehaviour
 
     [SerializeField] GameObject _atkIndicator;
 
-    [Tooltip("Float for external use, in actions or conditions.")]
+    [Tooltip("Generic float variable, used in actions/conditions.")]
     public float float1;
+    [Tooltip("Generic bool variable, used in actions/conditions.")]
+    public bool bool1;
 
     void Awake()
     {
