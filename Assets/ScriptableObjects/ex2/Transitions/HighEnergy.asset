@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9418cb01cd63fa45a35fa19d675a130, type: 3}
   m_Name: HighEnergy
   m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
+  _condition: {fileID: 11400000, guid: a913847bb79b61f48a33bcfc77686462, type: 2}
   _action: {fileID: 0}
   _targetState: {fileID: 11400000, guid: 2b22f6e0422a4124eb85ae9691336676, type: 2}

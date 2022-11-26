@@ -50,6 +50,8 @@ public class PlayerHealth : MonoBehaviour
         {
             transform.position = _startPos;
             _HP = _maxHP;
+
+            return true;
         }
         StartCoroutine("DamageTimer");
         return false;

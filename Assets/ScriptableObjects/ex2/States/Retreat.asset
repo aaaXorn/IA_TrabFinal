@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Retreat
   m_EditorClassIdentifier: 
   _entryAction: {fileID: 0}
-  _stateActions: []
+  _stateActions:
+  - {fileID: 11400000, guid: dea15e456318eb848970f2806b9de8d9, type: 2}
   _exitAction: {fileID: 0}
   _transitions:
   - {fileID: 11400000, guid: 099419018068ab9429f35681a863e723, type: 2}

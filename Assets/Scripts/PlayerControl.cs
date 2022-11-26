@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControl : MonoBehaviour
 {
+    public static PlayerControl singleton;
+
     [Tooltip("Initial state.")]
     [SerializeField] PlayerState _initState;
     PlayerState _currState;
@@ -28,6 +30,8 @@ public class PlayerControl : MonoBehaviour
         _rigid = GetComponent<Rigidbody>();
         _cam = Camera.main;
         _ph = GetComponent<PlayerHealth>();
+
+        singleton = this;
     }
 
     void Start()

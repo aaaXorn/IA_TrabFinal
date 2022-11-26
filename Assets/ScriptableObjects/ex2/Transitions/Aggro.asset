@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Aggro
   m_EditorClassIdentifier: 
   _condition: {fileID: 11400000, guid: d760087884805a342aeb511d36af314c, type: 2}
-  _action: {fileID: 0}
+  _action: {fileID: 11400000, guid: 4cd47e39639a1b04a92b589e9af2c38b, type: 2}
   _targetState: {fileID: 11400000, guid: c76658b9a757fc349935da651ac9333d, type: 2}

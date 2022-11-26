@@ -31,6 +31,11 @@ public class Navigation : MonoBehaviour
     {
         _navAgent.destination = _target.position;
     }
+    //moves to a defined point
+    public void GoToDestination(Vector3 point)
+    {
+        _navAgent.destination = point;
+    }
 
     //stops the agent
     public void StopAgent()
@@ -86,5 +91,9 @@ public class Navigation : MonoBehaviour
     public float GetDistFromTarget()
     {
         return (_target.position - transform.position).magnitude;
+    }
+    public Vector3 GetDirToTarget()
+    {
+        return (_target.position - transform.position).normalized;
     }
 }

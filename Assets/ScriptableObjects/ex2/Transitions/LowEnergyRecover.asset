@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9418cb01cd63fa45a35fa19d675a130, type: 3}
   m_Name: LowEnergyRecover
   m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
+  _condition: {fileID: 11400000, guid: de7c22c2269d9564b805abdaab34f982, type: 2}
   _action: {fileID: 0}
   _targetState: {fileID: 11400000, guid: dcb055208e0a5e04f963dabd8bd5237c, type: 2}
